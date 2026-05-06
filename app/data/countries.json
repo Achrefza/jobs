@@ -1,18 +1,154 @@
 [
   {
+    "slug": "poland",
+    "name": "Poland",
+    "flag": "🇵🇱",
+    "region": "Central Europe",
+    "popularCities": [
+      "Warsaw",
+      "Kraków",
+      "Wrocław",
+      "Gdańsk",
+      "Poznań"
+    ],
+    "averageInternshipSalary": "Typical paid internships and junior student roles often range from about 4,300 to 7,000 PLN gross per month, with technology, finance, and shared services roles sometimes paying more.",
+    "visaInformation": "EU/EEA students can usually work without a work permit. Non-EU students should confirm residence-permit work rights, internship contract rules, and employer obligations with official Polish sources before accepting an offer.",
+    "whyStudentsChoose": [
+      "Fast-growing technology, finance, gaming, logistics, and business services sectors.",
+      "Lower living costs than many Western European capitals while still offering large international employers.",
+      "Strong student cities with growing English-friendly internship and graduate opportunities."
+    ],
+    "englishRequirements": "English is common in multinational companies, shared service centers, technology teams, and startup roles. Polish language skills can significantly improve options for customer-facing, public-sector, healthcare, legal, and local-market roles.",
+    "intro": "Poland is a strong destination for students seeking paid internships, trainee programs, and first jobs in Central Europe. Warsaw, Kraków, Wrocław, Gdańsk, and Poznań offer growing opportunities in technology, finance, operations, logistics, gaming, marketing, and international business services.",
+    "seoTitle": "Paid Internships and Student Jobs in Poland",
+    "seoDescription": "Find paid internships, student jobs, popular cities, salary expectations, visa basics, FAQs, and trusted external opportunity portals for Poland.",
+    "faqs": [
+      {
+        "question": "Can international students find paid internships in Poland?",
+        "answer": "Yes. Many multinational employers and business service centers offer paid internships, especially in Warsaw, Kraków, Wrocław, Gdańsk, and Poznań. Always verify contract type, compensation, and work authorization before applying."
+      },
+      {
+        "question": "Which roles are common for English-speaking students?",
+        "answer": "Technology, finance operations, customer success, sales development, data, marketing, and shared services roles are common starting points for English speakers."
+      },
+      {
+        "question": "When should I apply for internships in Poland?",
+        "answer": "Start two to four months before your preferred start date. Large employers may open summer internship and graduate-program applications earlier."
+      }
+    ]
+  },
+  {
     "slug": "germany",
     "name": "Germany",
     "flag": "🇩🇪",
-    "region": "Central Europe",
-    "popularCities": ["Berlin", "Munich", "Hamburg", "Frankfurt", "Stuttgart"],
-    "englishRequirements": "Many international companies, startups, and research teams hire English-speaking students, especially in technology, engineering, business, and data roles. German language skills can significantly improve access to local SMEs and customer-facing jobs.",
-    "intro": "Germany is one of Europe's strongest destinations for paid internships, working student roles, graduate trainee programs, and entry-level jobs. International students benefit from a large industrial base, globally recognized employers, and a growing English-speaking startup ecosystem.",
-    "seoTitle": "Paid Internships and Entry-Level Jobs in Germany for International Students",
-    "seoDescription": "Find curated portals for paid internships, working student roles, and entry-level jobs in Germany. Explore cities, English requirements, FAQs, and trusted external opportunity websites.",
+    "region": "Western Europe",
+    "popularCities": [
+      "Berlin",
+      "Munich",
+      "Hamburg",
+      "Frankfurt",
+      "Stuttgart"
+    ],
+    "averageInternshipSalary": "Paid internships commonly range from about €800 to €1,800 gross per month, while mandatory internships, working-student jobs, and technical roles can vary significantly by employer and region.",
+    "visaInformation": "EU/EEA students can generally work without a work permit. Non-EU students should check residence-permit limits, student-work day allowances, and internship requirements through official German immigration and university sources.",
+    "whyStudentsChoose": [
+      "Large economy with global employers in engineering, automotive, finance, software, research, and manufacturing.",
+      "Well-established working-student, internship, trainee, and graduate-program pathways.",
+      "Strong university networks and many international companies hiring early-career talent."
+    ],
+    "englishRequirements": "English-friendly roles are common in Berlin startups, technology teams, research, consulting, and multinational companies. German language skills are often expected for customer-facing roles, local SMEs, healthcare, legal, and many engineering positions.",
+    "intro": "Germany is one of Europe’s strongest markets for paid internships, working-student jobs, trainee programs, and graduate roles. Students often target Berlin, Munich, Hamburg, Frankfurt, and Stuttgart for opportunities in technology, engineering, finance, automotive, research, and business operations.",
+    "seoTitle": "Paid Internships and Student Jobs in Germany",
+    "seoDescription": "Find paid internships, working-student jobs, popular cities, salary expectations, visa basics, FAQs, and trusted external opportunity portals for Germany.",
     "faqs": [
-      { "question": "Can international students find paid internships in Germany?", "answer": "Yes. Paid internships and working student roles are common in Germany, particularly for enrolled students in business, engineering, technology, finance, and research fields." },
-      { "question": "Do I need German to work in Germany?", "answer": "Not always. English-only roles exist in international companies and startups, but German is useful for local employers and client-facing work." },
-      { "question": "What roles are popular for students?", "answer": "Working student jobs, software internships, business development internships, research assistant roles, data analyst internships, and graduate trainee programs are popular starting points." }
+      {
+        "question": "Can international students get paid internships in Germany?",
+        "answer": "Yes. Many employers offer paid internships, working-student jobs, trainee programs, and graduate roles. Eligibility can depend on your study status, visa conditions, language skills, and whether the internship is mandatory or voluntary."
+      },
+      {
+        "question": "Do I need German for internships in Germany?",
+        "answer": "Not always. English can be enough for some technology, research, startup, and multinational roles, but German dramatically increases the number of available positions."
+      },
+      {
+        "question": "What should graduates search for in Germany?",
+        "answer": "Search for trainee programs, graduate programs, junior roles, working-student roles, internships, Werkstudent positions, and entry-level jobs."
+      }
+    ]
+  },
+  {
+    "slug": "italy",
+    "name": "Italy",
+    "flag": "🇮🇹",
+    "region": "Southern Europe",
+    "popularCities": [
+      "Milan",
+      "Rome",
+      "Turin",
+      "Bologna",
+      "Florence"
+    ],
+    "averageInternshipSalary": "Internship allowances often range from about €500 to €1,200 gross per month, with Milan-based finance, consulting, fashion, design, and technology roles typically more competitive.",
+    "visaInformation": "EU/EEA students can generally work without a work permit. Non-EU students should verify student residence-permit work limits, internship agreement rules, and employer requirements with official Italian and university sources.",
+    "whyStudentsChoose": [
+      "Strong opportunities in fashion, design, luxury, food, hospitality, engineering, automotive, and business.",
+      "Milan and Rome offer international employers, startups, and graduate programs.",
+      "Rich university ecosystem and globally recognized creative and industrial sectors."
+    ],
+    "englishRequirements": "English is useful in multinational companies, tourism, luxury, fashion, design, technology, and international business teams. Italian is often important for local companies, customer-facing work, public services, and many internships outside major cities.",
+    "intro": "Italy attracts students looking for internships and first jobs in design, fashion, luxury, tourism, food, engineering, automotive, marketing, finance, and technology. Milan is the strongest business hub, while Rome, Turin, Bologna, and Florence provide additional academic and industry opportunities.",
+    "seoTitle": "Paid Internships and Student Jobs in Italy",
+    "seoDescription": "Find paid internships, student jobs, popular cities, salary expectations, visa basics, FAQs, and trusted external opportunity portals for Italy.",
+    "faqs": [
+      {
+        "question": "Are internships in Italy paid?",
+        "answer": "Many internships provide an allowance or reimbursement, but pay varies by region, sector, contract type, and employer. Confirm compensation and working hours before accepting."
+      },
+      {
+        "question": "Which Italian cities are best for internships?",
+        "answer": "Milan is the leading business and fashion hub. Rome, Turin, Bologna, and Florence are also strong depending on your field."
+      },
+      {
+        "question": "Do I need Italian to work as a student in Italy?",
+        "answer": "English may be enough for some international teams, but Italian language skills make local internships and customer-facing roles much easier to access."
+      }
+    ]
+  },
+  {
+    "slug": "romania",
+    "name": "Romania",
+    "flag": "🇷🇴",
+    "region": "Eastern Europe",
+    "popularCities": [
+      "Bucharest",
+      "Cluj-Napoca",
+      "Timișoara",
+      "Iași",
+      "Brașov"
+    ],
+    "averageInternshipSalary": "Paid internships often range from about 2,500 to 5,000 RON gross per month, with technology, engineering, business services, and multilingual support roles varying by city and employer.",
+    "visaInformation": "EU/EEA students can generally work without a work permit. Non-EU students should check Romanian residence-permit work rights, internship rules, and employer documentation requirements before applying.",
+    "whyStudentsChoose": [
+      "Growing technology, engineering, cybersecurity, automotive, and multilingual business-services sectors.",
+      "Lower living costs than many Western European destinations.",
+      "Strong university cities with active startup and outsourcing ecosystems."
+    ],
+    "englishRequirements": "English is widely used in technology, outsourcing, shared services, support, and multinational teams. Romanian is helpful for local-market roles, public-facing work, and smaller employers.",
+    "intro": "Romania is a practical destination for students seeking paid internships and junior roles in technology, engineering, business services, finance operations, multilingual support, and startups. Bucharest and Cluj-Napoca are especially popular, with Timișoara, Iași, and Brașov also offering strong student ecosystems.",
+    "seoTitle": "Paid Internships and Student Jobs in Romania",
+    "seoDescription": "Find paid internships, student jobs, popular cities, salary expectations, visa basics, FAQs, and trusted external opportunity portals for Romania.",
+    "faqs": [
+      {
+        "question": "Is Romania good for tech internships?",
+        "answer": "Yes. Bucharest, Cluj-Napoca, Timișoara, and Iași have active technology, engineering, cybersecurity, and shared-services markets."
+      },
+      {
+        "question": "Can English-speaking students find jobs in Romania?",
+        "answer": "Yes, particularly in technology, multilingual support, business services, finance operations, and multinational companies."
+      },
+      {
+        "question": "What should students verify before applying?",
+        "answer": "Check work authorization, contract type, pay, working hours, remote or hybrid expectations, and whether the employer can support any required documentation."
+      }
     ]
   },
   {
@@ -20,15 +156,37 @@
     "name": "Netherlands",
     "flag": "🇳🇱",
     "region": "Western Europe",
-    "popularCities": ["Amsterdam", "Rotterdam", "The Hague", "Utrecht", "Eindhoven"],
-    "englishRequirements": "The Netherlands has a strong English-speaking labor market. Many internships and graduate jobs accept English as the working language, especially in tech, logistics, sustainability, consulting, and international business.",
-    "intro": "The Netherlands is a practical choice for international students seeking paid internships and first professional roles in Europe. Its global companies, startup hubs, and English-friendly workplaces make it one of the most accessible destinations.",
-    "seoTitle": "Paid Internships and Entry-Level Jobs in the Netherlands for International Students",
-    "seoDescription": "Search curated external websites for internships and graduate jobs in the Netherlands. Learn about cities, English requirements, FAQs, and application portals.",
+    "popularCities": [
+      "Amsterdam",
+      "Rotterdam",
+      "The Hague",
+      "Utrecht",
+      "Eindhoven"
+    ],
+    "averageInternshipSalary": "Internship compensation commonly ranges from about €400 to €1,200 gross per month, while technical, finance, and working-student roles may pay more depending on hours and employer.",
+    "visaInformation": "EU/EEA students can generally work without a work permit. Non-EU students should check Dutch student-work permit requirements, hourly limits, internship agreements, and employer obligations before accepting work.",
+    "whyStudentsChoose": [
+      "High English proficiency and many international companies hiring students and graduates.",
+      "Strong sectors in technology, logistics, finance, sustainability, engineering, creative industries, and startups.",
+      "Compact cities, strong universities, and excellent transport make applications across regions practical."
+    ],
+    "englishRequirements": "The Netherlands has many English-friendly internships and graduate jobs, especially in Amsterdam, Rotterdam, The Hague, Utrecht, and Eindhoven. Dutch remains valuable for local-market roles, customer-facing jobs, healthcare, legal, and public-sector opportunities.",
+    "intro": "The Netherlands is a leading destination for international students who want English-friendly internships, working-student roles, and entry-level jobs. Amsterdam, Rotterdam, The Hague, Utrecht, and Eindhoven offer opportunities in technology, logistics, finance, sustainability, engineering, creative industries, and international business.",
+    "seoTitle": "Paid Internships and Student Jobs in the Netherlands",
+    "seoDescription": "Find paid internships, student jobs, popular cities, salary expectations, visa basics, FAQs, and trusted external opportunity portals for the Netherlands.",
     "faqs": [
-      { "question": "Are internships paid in the Netherlands?", "answer": "Many internships offer monthly compensation or an allowance, although pay varies by employer, field, and internship structure." },
-      { "question": "Is Dutch required for entry-level roles?", "answer": "Dutch is helpful but not always required. International business, software, engineering, data, and startup roles commonly list English as sufficient." },
-      { "question": "Where should students search first?", "answer": "Start with university career boards, large job platforms, company career pages, startup boards, and international graduate program listings." }
+      {
+        "question": "Can international students find English-speaking internships in the Netherlands?",
+        "answer": "Yes. English-friendly opportunities are common in multinational companies, startups, technology, logistics, finance, and sustainability roles, especially in major cities."
+      },
+      {
+        "question": "Are Dutch internships paid?",
+        "answer": "Many internships offer an allowance, but pay depends on the employer, role, sector, and whether the placement is part of a study program."
+      },
+      {
+        "question": "Which city should I target first?",
+        "answer": "Amsterdam has the broadest international market, Eindhoven is strong for technology and engineering, Rotterdam is strong for logistics and business, and The Hague has policy and international-organization opportunities."
+      }
     ]
   },
   {
@@ -36,15 +194,37 @@
     "name": "France",
     "flag": "🇫🇷",
     "region": "Western Europe",
-    "popularCities": ["Paris", "Lyon", "Toulouse", "Lille", "Nice"],
-    "englishRequirements": "English-speaking opportunities are strongest in multinational companies, tech startups, research teams, tourism, finance, and international business. French language skills broaden access to local companies and regulated professions.",
-    "intro": "France offers international students a broad range of internships, apprenticeships, graduate schemes, and entry-level jobs. Paris is a major hub, while regional cities provide opportunities in aerospace, luxury, biotech, hospitality, and technology.",
-    "seoTitle": "Paid Internships and Entry-Level Jobs in France for International Students",
-    "seoDescription": "Discover trusted external websites for internships and entry-level jobs in France. Compare cities, English requirements, FAQs, and application resources.",
+    "popularCities": [
+      "Paris",
+      "Lyon",
+      "Toulouse",
+      "Lille",
+      "Nantes"
+    ],
+    "averageInternshipSalary": "Longer internships commonly include a legal gratification, and many student internships range from about €650 to €1,300 gross per month depending on employer, sector, and location.",
+    "visaInformation": "EU/EEA students can generally work without a work permit. Non-EU students should verify French residence-permit work rights, internship agreement requirements, and study-program conditions with official sources.",
+    "whyStudentsChoose": [
+      "Major employers in luxury, aerospace, engineering, consulting, finance, technology, and creative industries.",
+      "Structured internship culture through university conventions de stage.",
+      "Paris has a deep international job market, while regional hubs offer strong specialist sectors."
+    ],
+    "englishRequirements": "English is useful in multinational companies, startups, research, tourism, luxury, and international business. French is highly valuable and often required for local teams, customer-facing roles, public-sector work, and many internships.",
+    "intro": "France offers internships and early-career jobs across luxury, aerospace, engineering, finance, consulting, technology, tourism, and creative industries. Students often start with Paris, Lyon, Toulouse, Lille, and Nantes when comparing opportunities.",
+    "seoTitle": "Paid Internships and Student Jobs in France",
+    "seoDescription": "Find paid internships, student jobs, popular cities, salary expectations, visa basics, FAQs, and trusted external opportunity portals for France.",
     "faqs": [
-      { "question": "Are internships in France paid?", "answer": "Internships above certain durations often include a stipend, and many companies clearly list monthly gratification or compensation in the posting." },
-      { "question": "Can I find English-speaking jobs in France?", "answer": "Yes, especially in Paris and international sectors. French remains valuable and can make applications more competitive." },
-      { "question": "Which industries hire students in France?", "answer": "Technology, luxury, aerospace, consulting, hospitality, finance, research, and international sales are common student-friendly sectors." }
+      {
+        "question": "Do internships in France require a university agreement?",
+        "answer": "Many student internships require a convention de stage or similar agreement. Check requirements with your university and the employer before applying."
+      },
+      {
+        "question": "Can I find English-speaking internships in France?",
+        "answer": "Yes, especially in Paris and multinational teams, but French language skills usually expand your options."
+      },
+      {
+        "question": "Which sectors hire interns in France?",
+        "answer": "Luxury, consulting, finance, aerospace, engineering, technology, marketing, hospitality, and research are common sectors."
+      }
     ]
   },
   {
@@ -52,15 +232,37 @@
     "name": "Spain",
     "flag": "🇪🇸",
     "region": "Southern Europe",
-    "popularCities": ["Madrid", "Barcelona", "Valencia", "Seville", "Bilbao"],
-    "englishRequirements": "English-speaking roles are concentrated in multinational companies, tourism, tech startups, business services, marketing, and customer operations. Spanish can be important for local companies and public-facing work.",
-    "intro": "Spain attracts international students with growing startup ecosystems, global business service centers, and a strong hospitality and tourism sector. Paid internships and junior roles are especially visible in Madrid and Barcelona.",
-    "seoTitle": "Paid Internships and Entry-Level Jobs in Spain for International Students",
-    "seoDescription": "Find curated portals for internships, graduate roles, and junior jobs in Spain. Review cities, English requirements, FAQs, and trusted application links.",
+    "popularCities": [
+      "Madrid",
+      "Barcelona",
+      "Valencia",
+      "Seville",
+      "Bilbao"
+    ],
+    "averageInternshipSalary": "Internship compensation often ranges from about €400 to €1,100 gross per month, with higher ranges possible in technology, consulting, finance, and multinational roles.",
+    "visaInformation": "EU/EEA students can generally work without a work permit. Non-EU students should verify Spanish student residence work rights, internship agreement rules, and social-security requirements with official sources.",
+    "whyStudentsChoose": [
+      "Strong demand in tourism, hospitality, marketing, technology, business, renewable energy, and creative sectors.",
+      "Madrid and Barcelona offer large international employer ecosystems.",
+      "High quality of life and many universities with international student communities."
+    ],
+    "englishRequirements": "English-friendly roles are available in tourism, hospitality, startups, technology, sales, and international business. Spanish is important for customer-facing roles, local companies, and many internship programs.",
+    "intro": "Spain is popular with students seeking internships and first jobs in tourism, hospitality, marketing, technology, sales, renewable energy, and international business. Madrid and Barcelona are the largest markets, while Valencia, Seville, and Bilbao offer additional regional options.",
+    "seoTitle": "Paid Internships and Student Jobs in Spain",
+    "seoDescription": "Find paid internships, student jobs, popular cities, salary expectations, visa basics, FAQs, and trusted external opportunity portals for Spain.",
     "faqs": [
-      { "question": "Can international students get paid internships in Spain?", "answer": "Yes. Compensation varies, but many internships and trainee roles offer stipends, especially at international employers and larger organizations." },
-      { "question": "Is Spanish required?", "answer": "Some roles are English-friendly, especially in Barcelona and Madrid, but Spanish improves access to more employers and team environments." },
-      { "question": "What sectors are best for English speakers?", "answer": "Technology, digital marketing, tourism, customer success, business development, sales, and shared service centers often hire English speakers." }
+      {
+        "question": "Are internships in Spain usually paid?",
+        "answer": "Many internships offer a stipend or training allowance, but pay varies by employer, city, and agreement type. Confirm compensation before accepting."
+      },
+      {
+        "question": "Where should international students search first?",
+        "answer": "Madrid and Barcelona are the largest markets. Valencia, Seville, and Bilbao can be useful depending on your sector."
+      },
+      {
+        "question": "Do I need Spanish for internships in Spain?",
+        "answer": "English may be enough for some international companies and tourism roles, but Spanish skills significantly increase your options."
+      }
     ]
   },
   {
@@ -68,15 +270,37 @@
     "name": "Ireland",
     "flag": "🇮🇪",
     "region": "Western Europe",
-    "popularCities": ["Dublin", "Cork", "Galway", "Limerick", "Waterford"],
-    "englishRequirements": "Ireland is an English-speaking market, making it especially accessible for international students with strong professional English. Employers may value additional European languages for sales, support, and regional roles.",
-    "intro": "Ireland is a strong destination for students seeking English-speaking internships and entry-level jobs in Europe. Dublin hosts many technology, finance, pharmaceutical, and professional services employers with international hiring needs.",
-    "seoTitle": "Paid Internships and Entry-Level Jobs in Ireland for International Students",
-    "seoDescription": "Explore curated external links for internships and graduate jobs in Ireland. Learn about cities, English requirements, FAQs, and trusted job portals.",
+    "popularCities": [
+      "Dublin",
+      "Cork",
+      "Galway",
+      "Limerick",
+      "Waterford"
+    ],
+    "averageInternshipSalary": "Paid internships and graduate roles vary widely, but many internships range from about €1,200 to €2,200 gross per month depending on sector, hours, and employer.",
+    "visaInformation": "EU/EEA students can generally work without a work permit. Non-EU students should check Irish immigration permissions, student working-hour limits, and graduate-scheme eligibility before accepting an offer.",
+    "whyStudentsChoose": [
+      "English-speaking market with many technology, pharma, finance, and multinational employers.",
+      "Strong graduate-program culture and student career services.",
+      "Dublin offers global headquarters roles, while Cork, Galway, and Limerick have growing regional opportunities."
+    ],
+    "englishRequirements": "Ireland is an English-speaking market, so strong professional English is expected for most roles. Additional languages can help in customer success, sales, localization, and support teams at multinational companies.",
+    "intro": "Ireland is a strong English-speaking destination for students seeking internships, graduate programs, and entry-level jobs in technology, pharma, finance, business operations, customer success, and research. Dublin is the largest hub, with Cork, Galway, Limerick, and Waterford also offering opportunities.",
+    "seoTitle": "Paid Internships and Student Jobs in Ireland",
+    "seoDescription": "Find paid internships, student jobs, popular cities, salary expectations, visa basics, FAQs, and trusted external opportunity portals for Ireland.",
     "faqs": [
-      { "question": "Is Ireland good for English-speaking internships?", "answer": "Yes. Ireland is one of Europe's most accessible destinations for English-speaking students because English is the main workplace language." },
-      { "question": "Which cities have the most opportunities?", "answer": "Dublin has the largest concentration, while Cork, Galway, Limerick, and Waterford also offer roles in technology, pharma, and business services." },
-      { "question": "What roles should graduates search for?", "answer": "Graduate programs, analyst roles, software engineering roles, finance roles, customer success, sales development, and operations roles are common." }
+      {
+        "question": "Is Ireland good for international student internships?",
+        "answer": "Yes. Ireland has many multinational employers and graduate programs, particularly in Dublin, Cork, Galway, and Limerick."
+      },
+      {
+        "question": "What sectors hire interns in Ireland?",
+        "answer": "Technology, finance, pharma, business operations, customer success, research, and sales are common sectors."
+      },
+      {
+        "question": "Do I need a visa to work as a student in Ireland?",
+        "answer": "EU/EEA students generally do not need a work permit, while non-EU students must follow the conditions of their immigration permission and should verify current rules with official sources."
+      }
     ]
   }
 ]
