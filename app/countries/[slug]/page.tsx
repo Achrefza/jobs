@@ -24,6 +24,13 @@ export async function generateMetadata({ params }: CountryPageProps): Promise<Me
   return {
     title: country.seoTitle,
     description: country.seoDescription,
+    keywords: [
+      `paid internships ${country.name}`,
+      `student jobs ${country.name}`,
+      `entry-level jobs ${country.name}`,
+      `internship salary ${country.name}`,
+      `English-speaking internships ${country.name}`,
+    ],
     alternates: { canonical: url },
     openGraph: {
       type: "article",
@@ -49,7 +56,7 @@ export default async function CountryPage({ params }: CountryPageProps) {
   }
 
   const links = getCountryLinks(country.slug);
-  const jsonLd = {
+  const faqJsonLd = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
     mainEntity: country.faqs.map((faq) => ({
@@ -61,29 +68,28 @@ export default async function CountryPage({ params }: CountryPageProps) {
       },
     })),
   };
+  const articleJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: country.seoTitle,
+    description: country.seoDescription,
+    author: { "@type": "Organization", name: siteConfig.name },
+    publisher: { "@type": "Organization", name: siteConfig.name },
+    mainEntityOfPage: `${siteConfig.url}/countries/${country.slug}`,
+  };
 
   return (
     <main>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
-      <header className="border-b border-blue-100 bg-white/90 px-6 py-5 backdrop-blur lg:px-8">
-        <nav className="mx-auto flex max-w-7xl items-center justify-between gap-4" aria-label="Country navigation">
-          <Link className="focus-ring rounded-lg text-lg font-black tracking-tight text-slate-950" href="/">
-            Internships<span className="text-[#0a66c2]">Plus</span>
-          </Link>
-          <Link className="focus-ring rounded-full bg-blue-50 px-4 py-2 text-sm font-bold text-[#0a66c2]" href="/">
-            Change country
-          </Link>
-        </nav>
-      </header>
-
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
       <article className="px-6 py-14 lg:px-8">
         <div className="mx-auto max-w-7xl">
           <div className="grid gap-10 lg:grid-cols-[1fr_360px] lg:items-start">
-            <section className="animate-fade-up">
+            <section className="animate-fade-up" aria-labelledby="country-title">
               <p className="inline-flex rounded-full border border-blue-100 bg-blue-50 px-4 py-2 text-sm font-bold text-[#0a66c2]">
                 {country.flag} {country.region} opportunity guide
               </p>
-              <h1 className="mt-6 max-w-4xl text-4xl font-black tracking-tight text-slate-950 sm:text-6xl">
+              <h1 className="mt-6 max-w-4xl text-4xl font-black tracking-tight text-slate-950 sm:text-6xl" id="country-title">
                 Paid internships and entry-level jobs in {country.name}
               </h1>
               <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-600">{country.intro}</p>
@@ -94,17 +100,40 @@ export default async function CountryPage({ params }: CountryPageProps) {
                   </span>
                 ))}
               </div>
+              <div className="mt-8 flex flex-col gap-3 sm:flex-row">
+                <a className="focus-ring inline-flex items-center justify-center rounded-full bg-[#0a66c2] px-6 py-3 text-sm font-black text-white shadow-lg shadow-blue-700/20 transition hover:bg-[#074f95]" href="#opportunity-links">
+                  View opportunity portals <span className="ml-2" aria-hidden="true">↓</span>
+                </a>
+                <Link className="focus-ring inline-flex items-center justify-center rounded-full border border-blue-100 bg-white px-6 py-3 text-sm font-black text-[#0a66c2] transition hover:bg-blue-50" href="/#countries">
+                  Compare countries
+                </Link>
+              </div>
             </section>
 
             <aside className="rounded-3xl border border-blue-100 bg-white p-6 card-shadow" aria-label="Quick facts">
               <h2 className="text-xl font-black text-slate-950">Quick student checklist</h2>
               <ul className="mt-5 space-y-4 text-sm leading-6 text-slate-600">
                 <li><strong className="text-slate-950">Best search terms:</strong> paid internship, working student, trainee, graduate program, junior role.</li>
-                <li><strong className="text-slate-950">Start with:</strong> trusted portals, university career services, and employer career pages.</li>
-                <li><strong className="text-slate-950">Tip:</strong> filter by English, hybrid, internship, and entry-level where available.</li>
+                <li><strong className="text-slate-950">Salary context:</strong> {country.averageInternshipSalary}</li>
+                <li><strong className="text-slate-950">Verify first:</strong> eligibility, contract type, work hours, compensation, and visa/work authorization rules.</li>
               </ul>
             </aside>
           </div>
+
+          <section className="mt-16 grid gap-8 lg:grid-cols-3" aria-labelledby="why-heading">
+            <div className="rounded-3xl border border-blue-100 bg-white p-7 lg:col-span-2">
+              <h2 className="text-2xl font-black text-slate-950" id="why-heading">Why students choose {country.name}</h2>
+              <ul className="mt-5 grid gap-4 text-sm leading-6 text-slate-600 sm:grid-cols-3">
+                {country.whyStudentsChoose.map((reason) => (
+                  <li className="rounded-2xl bg-blue-50 p-4 font-semibold" key={reason}>{reason}</li>
+                ))}
+              </ul>
+            </div>
+            <div className="rounded-3xl border border-blue-100 bg-blue-50 p-7">
+              <h2 className="text-2xl font-black text-slate-950">Average internship salary</h2>
+              <p className="mt-4 leading-8 text-slate-600">{country.averageInternshipSalary}</p>
+            </div>
+          </section>
 
           <section className="mt-16 grid gap-8 lg:grid-cols-[0.85fr_1.15fr]" aria-labelledby="english-requirements">
             <div className="rounded-3xl border border-blue-100 bg-white p-7">
@@ -114,15 +143,23 @@ export default async function CountryPage({ params }: CountryPageProps) {
             <div className="rounded-3xl border border-blue-100 bg-blue-50 p-7">
               <h2 className="text-2xl font-black text-slate-950">Popular cities for students</h2>
               <p className="mt-4 leading-8 text-slate-600">
-                Start with {country.popularCities.slice(0, 3).join(", ")} for the largest mix of international employers, startups, and student-friendly roles. Smaller cities can be excellent for specialized industries and less competitive searches.
+                Start with {country.popularCities.slice(0, 3).join(", ")} for the largest mix of international employers, startups, universities, and student-friendly roles. Smaller cities can be excellent for specialized industries and less competitive searches.
               </p>
             </div>
+          </section>
+
+          <section className="mt-16 rounded-3xl border border-blue-100 bg-white p-7" aria-labelledby="visa-heading">
+            <h2 className="text-2xl font-black text-slate-950" id="visa-heading">Visa and work authorization information</h2>
+            <p className="mt-4 leading-8 text-slate-600">{country.visaInformation}</p>
+            <p className="mt-4 text-sm font-semibold leading-6 text-slate-500">
+              This guide is informational, not legal advice. Always confirm current visa, residence, tax, and work rules with official government, university, or employer sources.
+            </p>
           </section>
 
           <section className="mt-16" aria-labelledby="opportunity-links">
             <div className="flex flex-col justify-between gap-4 sm:flex-row sm:items-end">
               <div>
-                <h2 className="text-3xl font-black tracking-tight text-slate-950" id="opportunity-links">Curated opportunity links</h2>
+                <h2 className="text-3xl font-black tracking-tight text-slate-950" id="opportunity-links">External opportunity buttons</h2>
                 <p className="mt-3 max-w-2xl leading-7 text-slate-600">
                   These external websites are selected as starting points. Always verify eligibility, visa rules, compensation, and contract details directly with the employer or portal.
                 </p>
@@ -140,7 +177,7 @@ export default async function CountryPage({ params }: CountryPageProps) {
                     rel="noopener noreferrer"
                     target="_blank"
                   >
-                    Apply externally <span className="ml-2" aria-hidden="true">↗</span>
+                    Open opportunity portal <span className="ml-2" aria-hidden="true">↗</span>
                   </a>
                 </article>
               ))}

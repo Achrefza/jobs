@@ -1,8 +1,23 @@
 {
+  "poland": [
+    { "name": "EURES Poland", "url": "https://eures.europa.eu/living-and-working/labour-market-information/labour-market-information-poland_en", "description": "European labor-market information and mobility guidance for students researching work in Poland.", "category": "EU resource" },
+    { "name": "Pracuj.pl Internships", "url": "https://www.pracuj.pl/praca/praktyki%20sta%C5%BCe;kw", "description": "Large Polish job board with internships, trainee roles, and junior vacancies across major cities.", "category": "Job board" },
+    { "name": "LinkedIn Poland Internships", "url": "https://www.linkedin.com/jobs/internship-jobs-poland/", "description": "Broad marketplace for internships and entry-level roles from Polish and international employers.", "category": "Job board" }
+  ],
   "germany": [
     { "name": "Make it in Germany Job Listings", "url": "https://www.make-it-in-germany.com/en/working-in-germany/job-listings", "description": "Official gateway with job search resources and guidance for international talent.", "category": "Official portal" },
     { "name": "DAAD Career Resources", "url": "https://www.daad.de/en/studying-in-germany/work-career/", "description": "Student-focused information about working, internships, and careers in Germany.", "category": "Student guidance" },
     { "name": "LinkedIn Germany Internships", "url": "https://www.linkedin.com/jobs/internship-jobs-germany/", "description": "Large marketplace for internships, working student jobs, and junior roles.", "category": "Job board" }
+  ],
+  "italy": [
+    { "name": "EURES Italy", "url": "https://eures.europa.eu/living-and-working/labour-market-information/labour-market-information-italy_en", "description": "EU labor-market information for students comparing opportunities and practical work conditions in Italy.", "category": "EU resource" },
+    { "name": "LinkedIn Italy Internships", "url": "https://www.linkedin.com/jobs/internship-jobs-italy/", "description": "Internship and entry-level listings across Milan, Rome, Turin, Bologna, and other Italian cities.", "category": "Job board" },
+    { "name": "Indeed Italy Internships", "url": "https://it.indeed.com/q-stage-offerte-lavoro.html", "description": "Search Italian internship listings by city, sector, and employer.", "category": "Job board" }
+  ],
+  "romania": [
+    { "name": "EURES Romania", "url": "https://eures.europa.eu/living-and-working/labour-market-information/labour-market-information-romania_en", "description": "EU labor-market information and mobility context for students researching work in Romania.", "category": "EU resource" },
+    { "name": "eJobs Internships Romania", "url": "https://www.ejobs.ro/locuri-de-munca/internship", "description": "Romanian job board with internships, trainee positions, and junior roles.", "category": "Job board" },
+    { "name": "LinkedIn Romania Internships", "url": "https://www.linkedin.com/jobs/internship-jobs-romania/", "description": "Internship and entry-level listings across Bucharest, Cluj-Napoca, Timișoara, Iași, and more.", "category": "Job board" }
   ],
   "netherlands": [
     { "name": "EURES Netherlands", "url": "https://eures.europa.eu/living-and-working/labour-market-information/labour-market-information-netherlands_en", "description": "European labor market information and links for working in the Netherlands.", "category": "EU resource" },

@@ -13,7 +13,7 @@ export const siteConfig = {
   name: "InternshipsPlus",
   url: "https://internshipsplus.vercel.app",
   description:
-    "A lightweight curated platform for international students searching for paid internships and entry-level jobs in Europe.",
+    "Independent country guides for international students searching for paid internships, student jobs, trainee programs, and entry-level careers in Europe.",
 };
 
 export function getCountries(): Country[] {
