@@ -7,11 +7,15 @@ const inter = Inter({ subsets: ["latin"], variable: "--font-inter", display: "sw
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
+  applicationName: siteConfig.name,
   title: {
     default: `${siteConfig.name} | Paid Internships and Jobs in Europe`,
     template: `%s | ${siteConfig.name}`,
   },
   description: siteConfig.description,
+  icons: {
+    icon: "/favicon.svg",
+  },
   openGraph: {
     type: "website",
     url: siteConfig.url,

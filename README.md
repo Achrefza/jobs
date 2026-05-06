@@ -1,4 +1,4 @@
-# Euro Internship Gateway
+# InternshipsPlus
 
 A lightweight, static Next.js website for international students searching for paid internships and entry-level jobs in Europe.
 

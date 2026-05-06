@@ -68,7 +68,7 @@ export default async function CountryPage({ params }: CountryPageProps) {
       <header className="border-b border-blue-100 bg-white/90 px-6 py-5 backdrop-blur lg:px-8">
         <nav className="mx-auto flex max-w-7xl items-center justify-between gap-4" aria-label="Country navigation">
           <Link className="focus-ring rounded-lg text-lg font-black tracking-tight text-slate-950" href="/">
-            Euro<span className="text-[#0a66c2]">Gateway</span>
+            Internships<span className="text-[#0a66c2]">Plus</span>
           </Link>
           <Link className="focus-ring rounded-full bg-blue-50 px-4 py-2 text-sm font-bold text-[#0a66c2]" href="/">
             Change country
