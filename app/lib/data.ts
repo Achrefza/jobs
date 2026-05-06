@@ -10,10 +10,10 @@ export type ExternalLink = {
 };
 
 export const siteConfig = {
-  name: "Euro Internship Gateway",
-  url: "https://euro-internship-gateway.vercel.app",
+  name: "InternshipsPlus",
+  url: "https://internshipsplus.vercel.app",
   description:
-    "A lightweight curated gateway for international students searching for paid internships and entry-level jobs in Europe.",
+    "A lightweight curated platform for international students searching for paid internships and entry-level jobs in Europe.",
 };
 
 export function getCountries(): Country[] {

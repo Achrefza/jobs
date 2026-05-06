@@ -17,7 +17,7 @@ export default function Home() {
       <section className="relative overflow-hidden px-6 py-8 sm:py-10 lg:px-8">
         <div className="mx-auto flex max-w-7xl items-center justify-between gap-6" aria-label="Top navigation">
           <Link className="focus-ring rounded-lg text-lg font-black tracking-tight text-slate-950" href="/">
-            Euro<span className="text-[#0a66c2]">Gateway</span>
+            Internships<span className="text-[#0a66c2]">Plus</span>
           </Link>
           <a className="focus-ring rounded-full border border-blue-100 bg-white px-4 py-2 text-sm font-bold text-[#0a66c2] shadow-sm" href="#countries">
             Browse countries
