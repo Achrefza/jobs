@@ -1,0 +1,27 @@
+{
+  "germany": [
+    { "name": "Make it in Germany Job Listings", "url": "https://www.make-it-in-germany.com/en/working-in-germany/job-listings", "description": "Official gateway with job search resources and guidance for international talent.", "category": "Official portal" },
+    { "name": "DAAD Career Resources", "url": "https://www.daad.de/en/studying-in-germany/work-career/", "description": "Student-focused information about working, internships, and careers in Germany.", "category": "Student guidance" },
+    { "name": "LinkedIn Germany Internships", "url": "https://www.linkedin.com/jobs/internship-jobs-germany/", "description": "Large marketplace for internships, working student jobs, and junior roles.", "category": "Job board" }
+  ],
+  "netherlands": [
+    { "name": "EURES Netherlands", "url": "https://eures.europa.eu/living-and-working/labour-market-information/labour-market-information-netherlands_en", "description": "European labor market information and links for working in the Netherlands.", "category": "EU resource" },
+    { "name": "IamExpat Jobs Netherlands", "url": "https://www.iamexpat.nl/career/jobs-netherlands", "description": "English-friendly roles for international professionals and students.", "category": "Job board" },
+    { "name": "LinkedIn Netherlands Internships", "url": "https://www.linkedin.com/jobs/internship-jobs-netherlands/", "description": "Internship and entry-level listings across Dutch cities and employers.", "category": "Job board" }
+  ],
+  "france": [
+    { "name": "Welcome to the Jungle France", "url": "https://www.welcometothejungle.com/en/jobs?aroundQuery=France", "description": "Company profiles and startup-friendly internships, apprenticeships, and junior jobs.", "category": "Curated jobs" },
+    { "name": "Apec Jeunes Diplômés", "url": "https://www.apec.fr/candidat/recherche-emploi.html/emploi?typesConvention=143684", "description": "French career platform with graduate and early-career opportunities.", "category": "Graduate jobs" },
+    { "name": "LinkedIn France Internships", "url": "https://www.linkedin.com/jobs/internship-jobs-france/", "description": "Broad internship and junior role search across France.", "category": "Job board" }
+  ],
+  "spain": [
+    { "name": "InfoJobs Spain", "url": "https://www.infojobs.net/", "description": "One of Spain's largest job boards with internships and junior roles.", "category": "Job board" },
+    { "name": "StudentJob Spain", "url": "https://www.studentjob.es/", "description": "Student-friendly internships, part-time roles, and first jobs in Spain.", "category": "Student jobs" },
+    { "name": "LinkedIn Spain Internships", "url": "https://www.linkedin.com/jobs/internship-jobs-spain/", "description": "Internship and entry-level listings from Spanish and international employers.", "category": "Job board" }
+  ],
+  "ireland": [
+    { "name": "GradIreland", "url": "https://gradireland.com/", "description": "Graduate programs, internships, and career advice for students in Ireland.", "category": "Graduate jobs" },
+    { "name": "JobsIreland", "url": "https://www.jobsireland.ie/", "description": "National jobs service with vacancies across sectors and regions.", "category": "Official portal" },
+    { "name": "LinkedIn Ireland Internships", "url": "https://www.linkedin.com/jobs/internship-jobs-ireland/", "description": "Internship and junior roles in Dublin and other Irish cities.", "category": "Job board" }
+  ]
+}

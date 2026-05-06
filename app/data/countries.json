@@ -1,0 +1,82 @@
+[
+  {
+    "slug": "germany",
+    "name": "Germany",
+    "flag": "🇩🇪",
+    "region": "Central Europe",
+    "popularCities": ["Berlin", "Munich", "Hamburg", "Frankfurt", "Stuttgart"],
+    "englishRequirements": "Many international companies, startups, and research teams hire English-speaking students, especially in technology, engineering, business, and data roles. German language skills can significantly improve access to local SMEs and customer-facing jobs.",
+    "intro": "Germany is one of Europe's strongest destinations for paid internships, working student roles, graduate trainee programs, and entry-level jobs. International students benefit from a large industrial base, globally recognized employers, and a growing English-speaking startup ecosystem.",
+    "seoTitle": "Paid Internships and Entry-Level Jobs in Germany for International Students",
+    "seoDescription": "Find curated portals for paid internships, working student roles, and entry-level jobs in Germany. Explore cities, English requirements, FAQs, and trusted external opportunity websites.",
+    "faqs": [
+      { "question": "Can international students find paid internships in Germany?", "answer": "Yes. Paid internships and working student roles are common in Germany, particularly for enrolled students in business, engineering, technology, finance, and research fields." },
+      { "question": "Do I need German to work in Germany?", "answer": "Not always. English-only roles exist in international companies and startups, but German is useful for local employers and client-facing work." },
+      { "question": "What roles are popular for students?", "answer": "Working student jobs, software internships, business development internships, research assistant roles, data analyst internships, and graduate trainee programs are popular starting points." }
+    ]
+  },
+  {
+    "slug": "netherlands",
+    "name": "Netherlands",
+    "flag": "🇳🇱",
+    "region": "Western Europe",
+    "popularCities": ["Amsterdam", "Rotterdam", "The Hague", "Utrecht", "Eindhoven"],
+    "englishRequirements": "The Netherlands has a strong English-speaking labor market. Many internships and graduate jobs accept English as the working language, especially in tech, logistics, sustainability, consulting, and international business.",
+    "intro": "The Netherlands is a practical choice for international students seeking paid internships and first professional roles in Europe. Its global companies, startup hubs, and English-friendly workplaces make it one of the most accessible destinations.",
+    "seoTitle": "Paid Internships and Entry-Level Jobs in the Netherlands for International Students",
+    "seoDescription": "Search curated external websites for internships and graduate jobs in the Netherlands. Learn about cities, English requirements, FAQs, and application portals.",
+    "faqs": [
+      { "question": "Are internships paid in the Netherlands?", "answer": "Many internships offer monthly compensation or an allowance, although pay varies by employer, field, and internship structure." },
+      { "question": "Is Dutch required for entry-level roles?", "answer": "Dutch is helpful but not always required. International business, software, engineering, data, and startup roles commonly list English as sufficient." },
+      { "question": "Where should students search first?", "answer": "Start with university career boards, large job platforms, company career pages, startup boards, and international graduate program listings." }
+    ]
+  },
+  {
+    "slug": "france",
+    "name": "France",
+    "flag": "🇫🇷",
+    "region": "Western Europe",
+    "popularCities": ["Paris", "Lyon", "Toulouse", "Lille", "Nice"],
+    "englishRequirements": "English-speaking opportunities are strongest in multinational companies, tech startups, research teams, tourism, finance, and international business. French language skills broaden access to local companies and regulated professions.",
+    "intro": "France offers international students a broad range of internships, apprenticeships, graduate schemes, and entry-level jobs. Paris is a major hub, while regional cities provide opportunities in aerospace, luxury, biotech, hospitality, and technology.",
+    "seoTitle": "Paid Internships and Entry-Level Jobs in France for International Students",
+    "seoDescription": "Discover trusted external websites for internships and entry-level jobs in France. Compare cities, English requirements, FAQs, and application resources.",
+    "faqs": [
+      { "question": "Are internships in France paid?", "answer": "Internships above certain durations often include a stipend, and many companies clearly list monthly gratification or compensation in the posting." },
+      { "question": "Can I find English-speaking jobs in France?", "answer": "Yes, especially in Paris and international sectors. French remains valuable and can make applications more competitive." },
+      { "question": "Which industries hire students in France?", "answer": "Technology, luxury, aerospace, consulting, hospitality, finance, research, and international sales are common student-friendly sectors." }
+    ]
+  },
+  {
+    "slug": "spain",
+    "name": "Spain",
+    "flag": "🇪🇸",
+    "region": "Southern Europe",
+    "popularCities": ["Madrid", "Barcelona", "Valencia", "Seville", "Bilbao"],
+    "englishRequirements": "English-speaking roles are concentrated in multinational companies, tourism, tech startups, business services, marketing, and customer operations. Spanish can be important for local companies and public-facing work.",
+    "intro": "Spain attracts international students with growing startup ecosystems, global business service centers, and a strong hospitality and tourism sector. Paid internships and junior roles are especially visible in Madrid and Barcelona.",
+    "seoTitle": "Paid Internships and Entry-Level Jobs in Spain for International Students",
+    "seoDescription": "Find curated portals for internships, graduate roles, and junior jobs in Spain. Review cities, English requirements, FAQs, and trusted application links.",
+    "faqs": [
+      { "question": "Can international students get paid internships in Spain?", "answer": "Yes. Compensation varies, but many internships and trainee roles offer stipends, especially at international employers and larger organizations." },
+      { "question": "Is Spanish required?", "answer": "Some roles are English-friendly, especially in Barcelona and Madrid, but Spanish improves access to more employers and team environments." },
+      { "question": "What sectors are best for English speakers?", "answer": "Technology, digital marketing, tourism, customer success, business development, sales, and shared service centers often hire English speakers." }
+    ]
+  },
+  {
+    "slug": "ireland",
+    "name": "Ireland",
+    "flag": "🇮🇪",
+    "region": "Western Europe",
+    "popularCities": ["Dublin", "Cork", "Galway", "Limerick", "Waterford"],
+    "englishRequirements": "Ireland is an English-speaking market, making it especially accessible for international students with strong professional English. Employers may value additional European languages for sales, support, and regional roles.",
+    "intro": "Ireland is a strong destination for students seeking English-speaking internships and entry-level jobs in Europe. Dublin hosts many technology, finance, pharmaceutical, and professional services employers with international hiring needs.",
+    "seoTitle": "Paid Internships and Entry-Level Jobs in Ireland for International Students",
+    "seoDescription": "Explore curated external links for internships and graduate jobs in Ireland. Learn about cities, English requirements, FAQs, and trusted job portals.",
+    "faqs": [
+      { "question": "Is Ireland good for English-speaking internships?", "answer": "Yes. Ireland is one of Europe's most accessible destinations for English-speaking students because English is the main workplace language." },
+      { "question": "Which cities have the most opportunities?", "answer": "Dublin has the largest concentration, while Cork, Galway, Limerick, and Waterford also offer roles in technology, pharma, and business services." },
+      { "question": "What roles should graduates search for?", "answer": "Graduate programs, analyst roles, software engineering roles, finance roles, customer success, sales development, and operations roles are common." }
+    ]
+  }
+]
