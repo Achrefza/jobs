@@ -10,21 +10,25 @@ type MotionLinkProps = LinkProps &
     lift?: "none" | "sm" | "md";
   };
 
-const AnimatedLink = motion.create(Link);
+const AnimatedContainer = motion.span;
+
+function getLiftDistance(lift: MotionLinkProps["lift"]) {
+  return lift === "md" ? -4 : lift === "sm" ? -2 : 0;
+}
 
 export function MotionLink({ children, lift = "sm", ...props }: MotionLinkProps) {
   const shouldReduceMotion = useReducedMotion();
-  const liftDistance = lift === "md" ? -4 : lift === "sm" ? -2 : 0;
+  const liftDistance = getLiftDistance(lift);
 
   return (
-    <AnimatedLink
+    <AnimatedContainer
+      style={{ display: "inline-block" }}
       whileHover={shouldReduceMotion || lift === "none" ? undefined : { y: liftDistance, scale: lift === "md" ? 1.015 : 1.01 }}
       whileTap={shouldReduceMotion ? undefined : { scale: 0.985 }}
       transition={{ duration: 0.18, ease: "easeOut" }}
-      {...props}
     >
-      {children}
-    </AnimatedLink>
+      <Link {...props}>{children}</Link>
+    </AnimatedContainer>
   );
 }
 
@@ -37,7 +41,7 @@ type MotionAnchorProps = AnchorHTMLAttributes<HTMLAnchorElement> & {
 
 export function MotionAnchor({ children, lift = "sm", ...props }: MotionAnchorProps) {
   const shouldReduceMotion = useReducedMotion();
-  const liftDistance = lift === "md" ? -4 : lift === "sm" ? -2 : 0;
+  const liftDistance = getLiftDistance(lift);
 
   return (
     <AnimatedAnchor
