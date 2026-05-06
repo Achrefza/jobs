@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { CountrySearch } from "./components/CountrySearch";
-import { MotionLink } from "./components/MotionLink";
+import { MotionAnchor, MotionLink } from "./components/MotionLink";
 import { ScrollReveal } from "./components/ScrollReveal";
 import { getCountries, siteConfig } from "./lib/data";
 
@@ -10,6 +10,65 @@ const trustPoints = [
   "Curated external portals",
   "Student-first FAQs",
 ];
+
+const opportunityPlatforms = [
+  {
+    name: "LinkedIn",
+    logo: "in",
+    description: "Professional network with broad internship, graduate, and recruiter-led job listings.",
+    href: "https://www.linkedin.com/jobs/",
+    accent: "from-[#0a66c2] to-[#084f95]",
+  },
+  {
+    name: "Indeed",
+    logo: "id",
+    description: "Large job-search engine for comparing roles across employers and locations.",
+    href: "https://www.indeed.com/jobs?q=internship&l=Europe",
+    accent: "from-[#164081] to-[#0a66c2]",
+  },
+  {
+    name: "Glassdoor",
+    logo: "gd",
+    description: "Jobs, company reviews, and salary context to evaluate opportunities before applying.",
+    href: "https://www.glassdoor.com/Job/europe-internship-jobs-SRCH_IL.0,6_IN228_KO7,17.htm",
+    accent: "from-[#0c8f7a] to-[#0a66c2]",
+  },
+  {
+    name: "ErasmusIntern",
+    logo: "ei",
+    description: "Student-focused traineeship marketplace connected with the Erasmus community.",
+    href: "https://erasmusintern.org/traineeships",
+    accent: "from-[#1d4ed8] to-[#2563eb]",
+  },
+  {
+    name: "EURES",
+    logo: "eu",
+    description: "Official European job mobility portal for cross-border roles and work guidance.",
+    href: "https://eures.europa.eu/index_en",
+    accent: "from-[#075985] to-[#0a66c2]",
+  },
+  {
+    name: "Welcome to the Jungle",
+    logo: "wj",
+    description: "Curated company profiles and job listings with a strong European startup presence.",
+    href: "https://www.welcometothejungle.com/en/jobs",
+    accent: "from-[#0f766e] to-[#0a66c2]",
+  },
+  {
+    name: "JobTeaser",
+    logo: "jt",
+    description: "Early-career platform for internships, apprenticeships, and first jobs.",
+    href: "https://www.jobteaser.com/en/job-offers?locale=en",
+    accent: "from-[#2563eb] to-[#38bdf8]",
+  },
+  {
+    name: "Graduateland",
+    logo: "gl",
+    description: "Career network for students and graduates exploring jobs and internships.",
+    href: "https://graduateland.com/jobs",
+    accent: "from-[#1e40af] to-[#0ea5e9]",
+  },
+] as const;
 
 const howItWorks = [
   "Choose a country guide built around student search intent.",
@@ -40,7 +99,7 @@ export default function Home() {
         <div className="mx-auto grid max-w-7xl gap-12 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
           <ScrollReveal>
             <p className="mb-5 inline-flex rounded-full border border-blue-100 bg-blue-50 px-4 py-2 text-sm font-bold text-[#0a66c2]">
-              Paid internships · Entry-level jobs · Europe
+              Internships · Entry-level jobs · Europe
             </p>
             <h1 className="max-w-5xl text-5xl font-black tracking-tight text-slate-950 sm:text-6xl lg:text-7xl" id="home-hero-title">
               Find trusted internship and first-job portals across Europe.
@@ -99,6 +158,53 @@ export default function Home() {
           </ScrollReveal>
         </div>
       </section>
+
+      <ScrollReveal as="section" className="px-6 py-16 lg:px-8" id="find-opportunities" aria-labelledby="find-opportunities-title">
+        <div className="mx-auto max-w-7xl">
+          <div className="mx-auto max-w-3xl text-center">
+            <p className="text-sm font-black uppercase tracking-[0.25em] text-[#0a66c2]">Curated job platforms</p>
+            <h2 className="mt-4 text-3xl font-black tracking-tight text-slate-950 sm:text-4xl" id="find-opportunities-title">Find Opportunities</h2>
+            <p className="mt-4 text-lg leading-8 text-slate-600">
+              Start with trusted external platforms students and graduates commonly use to discover internships,
+              entry-level jobs, company research, and cross-border opportunities in Europe.
+            </p>
+          </div>
+
+          <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-4" role="list" aria-label="External internship and job search platforms">
+            {opportunityPlatforms.map((platform, index) => (
+              <ScrollReveal
+                as="article"
+                className="group relative flex h-full flex-col overflow-hidden rounded-3xl border border-blue-100 bg-white p-6 shadow-sm transition duration-300 hover:-translate-y-1 hover:border-blue-300 hover:shadow-2xl hover:shadow-blue-700/10"
+                key={platform.name}
+                delay={index * 0.035}
+                role="listitem"
+              >
+                <div className="pointer-events-none absolute inset-x-6 top-0 h-px bg-gradient-to-r from-transparent via-blue-300 to-transparent opacity-0 transition group-hover:opacity-100" />
+                <div className="flex items-start justify-between gap-4">
+                  <div className={`grid h-14 w-14 place-items-center rounded-2xl bg-gradient-to-br ${platform.accent} text-sm font-black uppercase tracking-tight text-white shadow-lg shadow-blue-700/20`} aria-hidden="true">
+                    {platform.logo}
+                  </div>
+                  <span className="rounded-full border border-blue-100 bg-blue-50 px-3 py-1 text-xs font-black uppercase tracking-[0.16em] text-[#0a66c2]">
+                    External
+                  </span>
+                </div>
+                <h3 className="mt-6 text-xl font-black text-slate-950">{platform.name}</h3>
+                <p className="mt-3 flex-1 text-sm leading-6 text-slate-600">{platform.description}</p>
+                <MotionAnchor
+                  className="focus-ring mt-6 inline-flex items-center justify-center rounded-full border border-blue-100 bg-blue-50 px-4 py-2 text-sm font-black text-[#0a66c2] transition group-hover:border-blue-300 group-hover:bg-[#0a66c2] group-hover:text-white"
+                  href={platform.href}
+                  lift="md"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={`Open ${platform.name} in a new tab`}
+                >
+                  Search jobs <span className="ml-2" aria-hidden="true">↗</span>
+                </MotionAnchor>
+              </ScrollReveal>
+            ))}
+          </div>
+        </div>
+      </ScrollReveal>
 
       <ScrollReveal as="section" className="px-6 py-16 lg:px-8" aria-labelledby="how-it-works-title">
         <div className="mx-auto max-w-7xl rounded-[2rem] border border-blue-100 bg-white p-8 card-shadow lg:p-10">
