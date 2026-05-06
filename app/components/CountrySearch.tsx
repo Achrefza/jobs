@@ -1,10 +1,11 @@
 "use client";
 
-import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
+import { AnimatePresence, useReducedMotion } from "framer-motion";
 import { useEffect, useMemo, useState, type FormEvent } from "react";
 import { useRouter } from "next/navigation";
 import type { Country } from "../lib/data";
 import { AnimatedLoadingOverlay } from "./AnimatedLoadingOverlay";
+import { MotionButton, MotionForm } from "./motion/SafeMotion";
 
 const loadingMessages = [
   "Searching opportunities…",
@@ -55,7 +56,7 @@ export function CountrySearch({ countries }: CountrySearchProps) {
 
   return (
     <>
-      <motion.form
+      <MotionForm
         aria-label="Search internships and entry-level jobs by destination country"
         className="card-shadow mx-auto mt-10 grid max-w-4xl gap-4 rounded-3xl border border-blue-100 bg-white/95 p-4 sm:grid-cols-[1fr_auto] sm:p-5"
         initial={shouldReduceMotion ? false : { opacity: 0, y: 14 }}
@@ -79,7 +80,7 @@ export function CountrySearch({ countries }: CountrySearchProps) {
             </option>
           ))}
         </select>
-        <motion.button
+        <MotionButton
           className="focus-ring min-h-14 rounded-2xl bg-[#0a66c2] px-7 text-base font-bold text-white shadow-lg shadow-blue-700/20 transition hover:bg-[#074f95]"
           type="submit"
           whileHover={shouldReduceMotion ? undefined : { y: -2, scale: 1.01 }}
@@ -87,8 +88,8 @@ export function CountrySearch({ countries }: CountrySearchProps) {
           transition={{ duration: 0.18, ease: "easeOut" }}
         >
           Search Opportunities
-        </motion.button>
-      </motion.form>
+        </MotionButton>
+      </MotionForm>
 
       <AnimatePresence>
         {isLoading ? (

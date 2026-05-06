@@ -1,8 +1,9 @@
 "use client";
 
-import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
+import { AnimatePresence, useReducedMotion } from "framer-motion";
 import { usePathname } from "next/navigation";
 import type { ReactNode } from "react";
+import { MotionDiv } from "./motion/SafeMotion";
 
 const transition = {
   duration: 0.28,
@@ -10,7 +11,7 @@ const transition = {
 } as const;
 
 type PageTransitionProps = {
-  children: ReactNode;
+  children?: ReactNode;
 };
 
 export function PageTransition({ children }: PageTransitionProps) {
@@ -23,7 +24,7 @@ export function PageTransition({ children }: PageTransitionProps) {
 
   return (
     <AnimatePresence mode="wait" initial={false}>
-      <motion.div
+      <MotionDiv
         key={pathname}
         initial={{ opacity: 0, y: 10, filter: "blur(6px)" }}
         animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
@@ -32,7 +33,7 @@ export function PageTransition({ children }: PageTransitionProps) {
         style={{ willChange: "opacity, transform, filter" }}
       >
         {children}
-      </motion.div>
+      </MotionDiv>
     </AnimatePresence>
   );
 }
