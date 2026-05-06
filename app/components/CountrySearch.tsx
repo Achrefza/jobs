@@ -1,8 +1,10 @@
 "use client";
 
+import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
 import { useEffect, useMemo, useState, type FormEvent } from "react";
 import { useRouter } from "next/navigation";
 import type { Country } from "../lib/data";
+import { AnimatedLoadingOverlay } from "./AnimatedLoadingOverlay";
 
 const loadingMessages = [
   "Searching opportunities…",
@@ -16,6 +18,7 @@ type CountrySearchProps = {
 
 export function CountrySearch({ countries }: CountrySearchProps) {
   const router = useRouter();
+  const shouldReduceMotion = useReducedMotion();
   const [selectedCountry, setSelectedCountry] = useState(countries[0]?.slug ?? "");
   const [isLoading, setIsLoading] = useState(false);
   const [messageIndex, setMessageIndex] = useState(0);
@@ -52,16 +55,19 @@ export function CountrySearch({ countries }: CountrySearchProps) {
 
   return (
     <>
-      <form
+      <motion.form
         aria-label="Search internships and entry-level jobs by destination country"
         className="card-shadow mx-auto mt-10 grid max-w-4xl gap-4 rounded-3xl border border-blue-100 bg-white/95 p-4 sm:grid-cols-[1fr_auto] sm:p-5"
+        initial={shouldReduceMotion ? false : { opacity: 0, y: 14 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.42, ease: [0.22, 1, 0.36, 1], delay: 0.08 }}
         onSubmit={handleSubmit}
       >
         <label className="sr-only" htmlFor="country">
           Destination country
         </label>
         <select
-          className="focus-ring min-h-14 rounded-2xl border border-blue-100 bg-blue-50 px-4 text-base font-semibold text-slate-900 transition hover:border-blue-300"
+          className="focus-ring min-h-14 rounded-2xl border border-blue-100 bg-blue-50 px-4 text-base font-semibold text-slate-900 transition hover:-translate-y-0.5 hover:border-blue-300 hover:bg-white"
           id="country"
           name="country"
           onChange={(event) => setSelectedCountry(event.target.value)}
@@ -73,30 +79,26 @@ export function CountrySearch({ countries }: CountrySearchProps) {
             </option>
           ))}
         </select>
-        <button
-          className="focus-ring min-h-14 rounded-2xl bg-[#0a66c2] px-7 text-base font-bold text-white shadow-lg shadow-blue-700/20 transition hover:-translate-y-0.5 hover:bg-[#074f95]"
+        <motion.button
+          className="focus-ring min-h-14 rounded-2xl bg-[#0a66c2] px-7 text-base font-bold text-white shadow-lg shadow-blue-700/20 transition hover:bg-[#074f95]"
           type="submit"
+          whileHover={shouldReduceMotion ? undefined : { y: -2, scale: 1.01 }}
+          whileTap={shouldReduceMotion ? undefined : { scale: 0.985 }}
+          transition={{ duration: 0.18, ease: "easeOut" }}
         >
           Search Opportunities
-        </button>
-      </form>
+        </motion.button>
+      </motion.form>
 
-      {isLoading ? (
-        <div
-          aria-live="assertive"
-          aria-label={`Searching opportunities in ${selectedCountryName}`}
-          className="fixed inset-0 z-50 grid place-items-center bg-white/95 px-6 backdrop-blur-md"
-          role="status"
-        >
-          <div className="text-center">
-            <div className="mx-auto loader-ring" />
-            <p className="mt-8 text-2xl font-bold text-slate-950">{loadingMessages[messageIndex]}</p>
-            <p className="mt-3 text-sm font-medium text-slate-600">
-              Building a curated results page for {selectedCountryName}.
-            </p>
-          </div>
-        </div>
-      ) : null}
+      <AnimatePresence>
+        {isLoading ? (
+          <AnimatedLoadingOverlay
+            eyebrow={`Searching ${selectedCountryName}`}
+            message={loadingMessages[messageIndex]}
+            detail={`Building a curated results page for ${selectedCountryName}.`}
+          />
+        ) : null}
+      </AnimatePresence>
     </>
   );
 }

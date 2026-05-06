@@ -70,6 +70,16 @@ body {
   to { transform: rotate(360deg); }
 }
 
+@media (hover: hover) and (pointer: fine) {
+  a,
+  button,
+  select,
+  article,
+  aside {
+    backface-visibility: hidden;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after {
     animation-duration: 0.01ms !important;
